@@ -1,1 +1,1 @@
-# Global-AI-&-Data-Science-Skills-and-Salary-Trends
+# Global AI & Data Science Skills and Salary Trends
