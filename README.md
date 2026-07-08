@@ -6,6 +6,8 @@ This project analyzes global AI and Data Science job market trends using Python 
 
 The final deliverable is an interactive Power BI dashboard supported by a reproducible Python workflow for cleaning, feature engineering, exploratory analysis, chart generation, and dashboard-ready CSV exports.
 
+---
+
 ## Dataset Description
 
 The project uses CSV datasets covering AI and Data Science job postings, skill demand, country-level trends, job title mappings, and dataset metadata.
@@ -18,6 +20,8 @@ The project uses CSV datasets covering AI and Data Science job postings, skill d
 | `data/raw/job_title_mapping.csv` | Mapping table for grouping job titles |
 | `data/raw/data_dictionary.csv` | Column definitions and dataset notes |
 
+---
+
 ## Tools Used
 
 | Area | Tools |
@@ -29,16 +33,28 @@ The project uses CSV datasets covering AI and Data Science job postings, skill d
 | Notebook | Jupyter |
 | Version Control | Git, GitHub |
 
+---
+
 ## Workflow
 
 ```text
-Raw CSV files
--> Data cleaning
--> Feature engineering
--> Exploratory data analysis
--> Chart and analysis table exports
--> Power BI data exports
--> Interactive dashboard
+Raw Data
+   ↓
+Data Loading
+   ↓
+Data Cleaning and Validation
+   ↓
+Feature Engineering
+   ↓
+Exploratory Data Analysis
+   ↓
+Chart and Table Export
+   ↓
+Power BI Data Preparation
+   ↓
+Interactive Dashboard Development
+   ↓
+Insights and Reporting
 ```
 
 Run the scripts in this order from the project root:
@@ -49,15 +65,25 @@ python scripts/feature_engineering.py
 python scripts/eda_analysis.py
 python scripts/export_powerbi_data.py
 ```
+---
 
 ## Python EDA Visualizations
 
 Python and Matplotlib were used to create supporting EDA charts before building the Power BI dashboard.
 
+### Jobs by Year
 ![Jobs by Year](images/charts/jobs_by_year.png)
+
+### Jobs by Country
 ![Jobs by Country](images/charts/jobs_by_country.png)
+
+### Salary by Career
 ![Salary by Career Stage](images/charts/salary_by_career_stage.png)
+
+### Top Skills
 ![Top Skills](images/charts/top_skills.png)
+
+---
 
 ## Dashboard Pages
 
@@ -68,6 +94,8 @@ Python and Matplotlib were used to create supporting EDA charts before building 
 | Skills Analysis | Top skills, skill categories, skill levels, and skill demand patterns |
 | Country & Work Arrangement | Country comparisons, remote share, salary, and job distribution |
 
+---
+
 ## Main Insights
 
 - AI and Data Science jobs show broad global demand across multiple countries.
@@ -75,6 +103,8 @@ Python and Matplotlib were used to create supporting EDA charts before building 
 - Senior-level roles generally show higher average salaries than entry-level and mid-level roles.
 - Remote, hybrid, and onsite work arrangements all remain relevant in the job market.
 - Country-level analysis helps compare job availability, salary differences, and work arrangement patterns.
+
+---
 
 ## Screenshots
 
@@ -93,6 +123,8 @@ Python and Matplotlib were used to create supporting EDA charts before building 
 ### Country & Work Arrangement
 
 ![Country and Work Arrangement Dashboard](images/dashboard/country_work_arrangement.png)
+
+---
 
 ## How to Run the Project
 
@@ -137,6 +169,8 @@ python scripts/export_powerbi_data.py
 powerbi/AI_Data_Science_Job_Market_Dashboard.pbix
 ```
 
+---
+
 ## Folder Structure
 
 ```text
@@ -159,6 +193,7 @@ charith-01-global-ai-data-science-skills-and-salary-trends/
 |   |-- eda_analysis.py
 |   |-- export_powerbi_data.py
 ```
+---
 
 ## Project Outcome
 
