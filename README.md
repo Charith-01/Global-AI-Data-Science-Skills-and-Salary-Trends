@@ -253,9 +253,9 @@ Python and Matplotlib were used to create exploratory visualizations before deve
 
 ![Jobs by Year](images/charts/jobs_by_year.png)
 
-### Jobs by Country
+### Salary by Career Stage
 
-![Jobs by Country](images/charts/jobs_by_country.png)
+![Jobs by Country](images/charts/salary_by_career_stage.png)
 
 ### Top In-Demand Skills
 
