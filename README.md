@@ -22,16 +22,17 @@ The project uses CSV datasets covering AI and Data Science job postings, skill d
 
 ---
 
-## Tools Used
+## Tools and Technologies Used
 
-| Area | Tools |
+| Category | Tools |
 |---|---|
 | Programming | Python |
-| Analysis | pandas, NumPy |
-| Visualization | Matplotlib |
-| Dashboard | Power BI Desktop |
-| Notebook | Jupyter |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Power BI |
+| Dashboard Development | Power BI Desktop |
+| Notebook Environment | Jupyter Notebook / VS Code |
 | Version Control | Git, GitHub |
+| Data Format | CSV |
 
 ---
 
