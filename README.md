@@ -200,53 +200,47 @@ Key insights identified from the analysis:
 
 ## Project Folder Structure
 
-```
-global-ai-data-science-skills-salary-trends/
+```text
+charith-01-global-ai-data-science-skills-and-salary-trends/
+│
+├── README.md
 │
 ├── data/
 │   ├── raw/
-│   │   ├── ai_jobs.csv
-│   │   ├── skills_demand.csv
 │   │   ├── country_ai_trends.csv
-│   │   ├── job_title_mapping.csv
-│   │   └── data_dictionary.csv
+│   │   ├── data_dictionary.csv
+│   │   └── job_title_mapping.csv
 │   │
 │   └── processed/
-│       ├── ai_jobs_cleaned.csv
-│       ├── skills_demand_cleaned.csv
 │       ├── country_trends_cleaned.csv
-│       ├── ai_jobs_feature_engineered.csv
 │       └── analysis_tables/
+│           ├── jobs_by_country.csv
+│           ├── jobs_by_year.csv
+│           ├── salary_by_country.csv
+│           ├── salary_by_role.csv
+│           ├── skill_category_demand.csv
+│           ├── skill_level_demand.csv
+│           └── top_skills.csv
 │
 ├── images/
-│   └── charts/
-│       ├── jobs_by_year.png
-│       ├── jobs_by_country.png
-│       ├── salary_by_year.png
-│       ├── top_skills.png
-│       └── skill_category_distribution.png
+│   ├── charts/
+│   │   ├── jobs_by_country.png
+│   │   ├── jobs_by_year.png
+│   │   └── top_skills.png
+│   │
+│   └── dashboard/
 │
 ├── notebooks/
-│   └── ai_data_science_job_market_analysis.ipynb
 │
 ├── powerbi/
-│   ├── data/
-│   │   ├── ai_jobs_powerbi.csv
-│   │   ├── skills_demand_powerbi.csv
-│   │   └── country_trends_powerbi.csv
-│   │
-│   └── AI_Data_Science_Job_Market_Dashboard.pbix
+│   └── data/
+│       └── country_trends_powerbi.csv
 │
-├── scripts/
-│   ├── data_cleaning.py
-│   ├── feature_engineering.py
-│   ├── eda_analysis.py
-│   └── export_powerbi_data.py
-│
-├── README.md
-└── requirements.txt
-```
-
+└── scripts/
+    ├── data_cleaning.py
+    ├── feature_engineering.py
+    ├── eda_analysis.py
+    └── export_powerbi_data.py
 ---
 
 ## Screenshots
