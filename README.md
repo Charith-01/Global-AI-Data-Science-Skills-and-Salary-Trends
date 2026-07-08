@@ -78,7 +78,7 @@ Python and Matplotlib were used to create supporting EDA charts before building 
 ### Jobs by Country
 ![Jobs by Country](images/charts/jobs_by_country.png)
 
-### Salary by Career
+### Salary by Career Stage
 ![Salary by Career Stage](images/charts/salary_by_career_stage.png)
 
 ### Top Skills
