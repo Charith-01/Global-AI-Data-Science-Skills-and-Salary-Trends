@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+~$*
+
+# Local configuration
+.env
+.env.*
+!.env.example
+
+# Optional local-only large/raw exports
+data/raw/local/
+data/raw/archive/
+data/raw/*.zip
+data/raw/*.7z
+data/raw/*.parquet
+data/raw/*.xlsx
+data/raw/*.xls
+
+# Keep project deliverables tracked
+!README.md
+!scripts/
+!scripts/**
+!images/charts/
+!images/charts/**
+!images/dashboard/
+!images/dashboard/**
+!powerbi/data/
+!powerbi/data/**
+!data/processed/analysis_tables/
+!data/processed/analysis_tables/**
