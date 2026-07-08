@@ -251,6 +251,21 @@ global-ai-data-science-skills-salary-trends/
 
 ## Screenshots
 
+### Dashboard Overview
+
+<img width="2767" height="1600" alt="overview" src="https://github.com/user-attachments/assets/96d78c0c-a33e-4b3a-b90b-325b90cfbc9e" />
+
+### Salary Analysis
+
+<img width="2767" height="1600" alt="salary_analysis" src="https://github.com/user-attachments/assets/55c487d9-622b-49c1-b122-4affca5eede3" />
+
+### Skill Analysis
+
+<img width="2767" height="1600" alt="skills_analysis" src="https://github.com/user-attachments/assets/93968586-f39f-4256-bdce-f988bae96a42" />
+
+### Country & Work Arrangement
+
+<img width="2767" height="1600" alt="country_work_arrangement" src="https://github.com/user-attachments/assets/f08054c6-f599-4815-aa68-c1c978e244a2" />
 
 ---
 
