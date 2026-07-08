@@ -245,7 +245,25 @@ charith-01-global-ai-data-science-skills-and-salary-trends/
 
 ---
 
-## Screenshots
+## Python EDA Visualizations
+
+Python and Matplotlib were used to create exploratory visualizations before developing the Power BI dashboard. These charts helped identify important patterns in job postings, country demand, and skill trends.
+
+### Jobs by Year
+
+![Jobs by Year](images/charts/jobs_by_year.png)
+
+### Jobs by Country
+
+![Jobs by Country](images/charts/jobs_by_country.png)
+
+### Top In-Demand Skills
+
+![Top Skills](images/charts/top_skills.png)
+
+---
+
+## Power BI Screenshots
 
 ### Dashboard Overview
 
