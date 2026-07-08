@@ -1,4 +1,4 @@
-# Global AI & Data Science Job Market, Skills & Salary Trends
+# Global AI & Data Science Job Market, Skills & Salary Trends Dashboard
 
 ## Project Objective
 
