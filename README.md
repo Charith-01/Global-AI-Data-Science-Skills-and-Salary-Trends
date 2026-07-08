@@ -41,7 +41,250 @@ Raw CSV files
 -> Interactive dashboard
 ```
 
-Run order:
+### 1. Data Loading and Cleaning
+
+The raw datasets were loaded using Python and checked for:
+ - Dataset shape
+ - Missing values
+ - Duplicate records
+ - Data types
+ - Salary value consistency
+ - Basic data quality issues
+
+### 2. Feature Engineering
+
+New analytical columns were created to support dashboard insights:
+
+| Feature              | Purpose                                                          |
+| -------------------- | ---------------------------------------------------------------- |
+| `salary_avg_usd`     | Average salary calculated from minimum and maximum salary        |
+| `salary_level`       | Salary category such as Low, Medium, High, and Very High         |
+| `career_stage`       | Career grouping such as Entry Level, Mid Level, and Senior Level |
+| `is_remote_friendly` | Identifies Remote and Hybrid jobs                                |
+| `role_group`         | Groups detailed job titles into broader role categories          |
+
+### 3. Exploratory Data Analysis
+
+EDA was performed to analyze:
+ - Job trends by year
+ - Job distribution by country
+ - Job distribution by role group
+ - Salary trends by year
+ - Salary by country
+ - Salary by career stage
+ - Salary by role group
+ - Work arrangement distribution
+ - Top in-demand skills
+ - Skill category distribution
+ - Skill level distribution
+
+### 4. Power BI Data Export
+
+Cleaned and feature-engineered datasets were exported for Power BI:
+
+```
+powerbi/data/ai_jobs_powerbi.csv
+powerbi/data/skills_demand_powerbi.csv
+powerbi/data/country_trends_powerbi.csv
+```
+---
+
+## Dashboard Pages
+
+The Power BI dashboard contains four main pages.
+
+### 1. Overview
+
+This page provides a high-level summary of the AI and Data Science job market.
+
+Main visuals:
+ - Total Jobs
+ - Average Salary
+ - Total Countries
+ - Total Skills
+ - Job Count Trend by Year
+ - Jobs by Country
+ - Work Arrangement Distribution
+
+### 2. Salary Analysis
+
+This page focuses on salary patterns across years, roles, career stages, and work arrangements.
+
+Main visuals:
+ - Average Salary
+ - Highest Salary
+ - Lowest Salary
+ - Salary Range
+ - Average Salary Trend by Year
+ - Average Salary by Career Stage
+ - Average Salary by Role Group
+ - Average Salary by Work Arrangement
+ - Job Distribution by Salary Level
+
+### 3. Skills Analysis
+
+This page analyzes skill demand across AI and Data Science roles.
+
+Main visuals:
+ - Total Skills
+ - Top Skill
+ - Top Skill Category
+ - Most Common Skill Level
+ - Top 10 In-Demand Skills
+ - Skill Category Distribution
+ - Skill Level Distribution
+ - Skill Category Mix by Role Group
+
+### 4. Country & Work Arrangement Analysis
+
+This page compares job availability, salary, and work arrangement patterns across countries.
+
+Main visuals:
+ - Total Countries
+ - Top Country
+ - Highest Average Salary Country
+ - Remote Job Share
+ - Jobs by Country
+ - Average Salary by Country
+ - Work Arrangement by Country
+ - Country Job Trend by Year
+
+---
+
+## Main Insights
+
+Key insights identified from the analysis:
+ - AI and Data Science job postings show consistent global demand across multiple countries.
+ - AWS, GCP, TensorFlow, Azure, Scikit-learn, Python, SQL, and NLP appear among the most in-demand skills.
+ - Machine Learning related skills represent the largest skill category in the dataset.
+ - Salary patterns vary by career stage, with senior-level roles showing higher average salary values.
+ - Remote, hybrid, and onsite work arrangements are all important in the AI and Data Science job market.
+ - Country-level analysis helps compare job availability and salary differences across major markets.
+ - Role groups such as Data Science, Machine Learning, Data Analytics, AI Research, and MLOps show strong demand.
+
+---
+
+## Project Folder Structure
+
+```text
+charith-01-global-ai-data-science-skills-and-salary-trends/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/
+│   │   ├── country_ai_trends.csv
+│   │   ├── data_dictionary.csv
+│   │   └── job_title_mapping.csv
+│   │
+│   └── processed/
+│       ├── country_trends_cleaned.csv
+│       └── analysis_tables/
+│           ├── jobs_by_country.csv
+│           ├── jobs_by_year.csv
+│           ├── salary_by_country.csv
+│           ├── salary_by_role.csv
+│           ├── skill_category_demand.csv
+│           ├── skill_level_demand.csv
+│           └── top_skills.csv
+│
+├── images/
+│   ├── charts/
+│   │   ├── jobs_by_country.png
+│   │   ├── jobs_by_year.png
+│   │   └── top_skills.png
+│   │
+│   └── dashboard/
+│
+├── notebooks/
+│
+├── powerbi/
+│   └── data/
+│       └── country_trends_powerbi.csv
+│
+└── scripts/
+    ├── data_cleaning.py
+    ├── feature_engineering.py
+    ├── eda_analysis.py
+    └── export_powerbi_data.py
+```
+
+---
+
+## Python EDA Visualizations
+
+Python and Matplotlib were used to create exploratory visualizations before developing the Power BI dashboard. These charts helped identify important patterns in job postings, country demand, and skill trends.
+
+### Jobs by Year
+
+![Jobs by Year](images/charts/jobs_by_year.png)
+
+### Salary by Career Stage
+
+![Jobs by Country](images/charts/salary_by_career_stage.png)
+
+### Top In-Demand Skills
+
+![Top Skills](images/charts/top_skills.png)
+
+---
+
+## Power BI Screenshots
+
+### Dashboard Overview
+
+<img width="2767" height="1600" alt="overview" src="https://github.com/user-attachments/assets/96d78c0c-a33e-4b3a-b90b-325b90cfbc9e" />
+
+### Salary Analysis
+
+<img width="2767" height="1600" alt="salary_analysis" src="https://github.com/user-attachments/assets/55c487d9-622b-49c1-b122-4affca5eede3" />
+
+### Skill Analysis
+
+<img width="2767" height="1600" alt="skills_analysis" src="https://github.com/user-attachments/assets/93968586-f39f-4256-bdce-f988bae96a42" />
+
+### Country & Work Arrangement
+
+<img width="2767" height="1600" alt="country_work_arrangement" src="https://github.com/user-attachments/assets/f08054c6-f599-4815-aa68-c1c978e244a2" />
+
+---
+
+## How to Run the Project
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/global-ai-data-science-skills-salary-trends.git
+cd global-ai-data-science-skills-salary-trends
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment:
+
+For Windows:
+```bash
+venv\Scripts\activate
+```
+
+For macOS/Linux:
+```bash
+source venv/bin/activate
+```
+
+### 3. Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run Python Scripts
+
+Run the scripts in this order:
 
 ```bash
 python scripts/data_cleaning.py
